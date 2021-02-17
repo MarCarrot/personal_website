@@ -1,0 +1,248 @@
+/*
+Sources used: 
+navbar: https://freshman.tech/flexbox-navbar/
+*/
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 45px;
+    font-size: 1.2em;
+    background-color: rgba(0,0,0,.01);
+    background-blend-mode: lighten;
+    background-image: url("images/backgrounds/triangle-mosaic.png");
+    height: 100%;
+}
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.box .nav {
+  flex: 0 1 auto;
+}
+
+.box .row.content {
+  flex: 1 1 auto;
+}
+
+.box .row.footer {
+  flex: 0 1 40px;
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 100%;
+  background-color: rgb(128, 148, 136);
+  padding-left: 5%;
+  padding-right: 4%;
+}
+
+.logo {
+  display: inline-block;
+  font-weight: bold;
+  color: white;
+  font-size: large;
+  text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-item:hover {
+  background-color: rgb(157, 179, 165);
+}
+
+.nav-item:hover a {
+  color: darkgreen;
+}
+
+.logo img {
+  width: 175px;
+  vertical-align: middle;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+    text-align: center;
+    margin-top: 5%;
+    color: black;
+}
+
+.hr {
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(128, 148, 136), rgba(0, 0, 0, 0));
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 1%;
+}
+
+.dict-table {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 30px;
+    
+}
+
+[class*="body-text-"] {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding-left: 12%;
+    padding-right: 11%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.body-text-regular {
+    padding-bottom: 25px;
+    line-height: 1.6em;
+
+}
+.body-text-header {
+    padding-top: 1.5%;
+    padding-bottom: 1%;
+}
+
+.dict-image {
+    margin-left: 20%;
+    padding-left: 10%;
+    max-width: 70%;
+}
+
+.dict-text {
+    padding-left: 10%;
+    padding-bottom: 3%;
+    margin-right: 10%;
+}
+
+.dict-list {
+    list-style-type:square;
+    list-style-position: inside;
+}
+
+.dict-text-header {
+    color: red;
+}
+
+.bubble-container {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 30px;
+    padding-top: 15;
+    padding-bottom: 60px;
+}
+
+.bubble {
+    border-right: 2px solid rgb(128, 148, 136);
+}
+
+#icon {
+    color: inherit;
+    padding: 10px;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.quote {
+    border-left: 1px solid gray;
+    font-style: italic;
+    color: gray;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+#quote-author {
+    text-align: right;
+}
+
+.active-tab {
+  background-color: rgb(145, 167, 153);
+}
+
+.dark {
+  color: white;
+  font-weight: 500;
+}
+
+.dark-nav {
+  background-color: rgb(85, 99, 91);
+
+}
+
+.dark-background {
+  /* background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)), url("images/backgrounds/triangle-mosaic.png");
+   */
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("images/backgrounds/triangle-mosaic.png");
+  background-blend-mode: normal;
+}
+
+.night-light {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.night-light-off {
+  color: yellow;
+  background: gray;
+}
+
+.external {
+  color:  rgb(128, 148, 136);
+}
+
+.external-dark {
+  color:  rgb(145, 167, 153);
+}
+
+.enlarge {
+  font-size: large;
+}
+
+.a {
+  
+}
